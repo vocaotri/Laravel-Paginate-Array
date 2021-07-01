@@ -16,7 +16,7 @@ Laravel Paginate Array
     */
     $users = array_filter($users,"filterByAI");
     /**
-     List param:
+     Params:
      1. data
      2. number of item per page.
      3. current page.
