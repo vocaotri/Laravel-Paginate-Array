@@ -15,6 +15,15 @@ Laravel Paginate Array
     ];
     */
     $users = array_filter($users,"filterByAI");
+    /**
+     List param:
+     1. data
+     2. number of item per page.
+     3. current page.
+     4. option.
+     Custom url current ['path' => url()->current()]
+     Ex: new ResolvePaginate($users,5,2,['path' => url()->current()])
+    */
     $userPaginate = new ResolvePaginate($users,5,2)
     return $userPaginate->paginate();
   }
